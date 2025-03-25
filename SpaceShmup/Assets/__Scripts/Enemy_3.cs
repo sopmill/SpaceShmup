@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.EditorTools;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Enemy_3 : Enemy
 {
@@ -46,6 +48,7 @@ public class Enemy_3 : Enemy
         }
         transform.rotation = Quaternion.Euler(u*180, 0, 0);
 
+        u = u - 0.1f * Mathf.Sin(u * Mathf.PI * 2);
         pos = Utils.Bezier(u, points);
     }
 

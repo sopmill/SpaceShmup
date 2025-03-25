@@ -355,6 +355,7 @@
 -analyzer:"Library/PackageCache/com.unity.collab-proxy@2.7.1/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll"
 -analyzer:"Library/PackageCache/com.unity.collab-proxy@2.7.1/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll"
 -analyzer:"Library/PackageCache/com.unity.collab-proxy@2.7.1/Lib/Editor/unityplastic.dll"
+"Assets/__Scripts/BlinkColorOnHit.cs"
 "Assets/__Scripts/BoundsCheck.cs"
 "Assets/__Scripts/Enemy.cs"
 "Assets/__Scripts/Enemy_0.cs"
@@ -367,6 +368,7 @@
 "Assets/__Scripts/ProjectileHero.cs"
 "Assets/__Scripts/Shield.cs"
 "Assets/__Scripts/Utils.cs"
+"Assets/__Scripts/Weapon.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -9,7 +9,7 @@ public class Utils : MonoBehaviour
         Vector3[,] vArr = new Vector3[points.Length, points.Length];
         int r = points.Length - 1;
         for (int c = 0; c < points.Length; c++){
-            vArr[r, c] = vList[c];
+            vArr[r, c] = points[c];
         }
         for(r--; r >= 0 ; r--){
             for(int c = 0; c <= r; c++){
@@ -17,5 +17,15 @@ public class Utils : MonoBehaviour
             }
         }
         return vArr[0,0];
+    }
+
+    static public Material[] GetAllMaterials(GameObject go){
+        Renderer[] rends = go.GetComponentsInChildren<Renderer>();
+
+        Material[] mats = new Material[rends.Length];
+        for (int i = 0; i < rends.Length; i++){
+            mats[i] = rends[i].material;
+        }
+        return mats;
     }
 }
