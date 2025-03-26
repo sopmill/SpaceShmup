@@ -122,6 +122,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &92016654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92016657}
+  - component: {fileID: 92016656}
+  - component: {fileID: 92016655}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &92016655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92016654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &92016656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92016654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &92016657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92016654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139008868
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +304,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 931308612}
     m_Modifications:
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: _type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.letter
+      value: P
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.projectilePrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 2b917555367b8f64fab39ba6974870f3, type: 3}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.weaponModelPrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 2b917555367b8f64fab39ba6974870f3, type: 3}
     - target: {fileID: 5605231515421099664, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
       propertyPath: m_Name
       value: Weapon
@@ -290,6 +378,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6787301483398206072, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
   m_PrefabInstance: {fileID: 179189768}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &526442934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+  m_PrefabInstance: {fileID: 179189768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd0ea459540c4dd8a2fe0c1e60380b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &529887951
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +500,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6787301483398206072, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
   m_PrefabInstance: {fileID: 1555810249}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &633356310 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+  m_PrefabInstance: {fileID: 1555810249}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd0ea459540c4dd8a2fe0c1e60380b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +622,6 @@ GameObject:
   - component: {fileID: 818359295}
   - component: {fileID: 818359294}
   - component: {fileID: 818359297}
-  - component: {fileID: 818359298}
   m_Layer: 8
   m_Name: _Hero
   m_TagString: Untagged
@@ -562,9 +671,14 @@ MonoBehaviour:
   speed: 30
   rollMult: -45
   pitchMult: 20
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
   projectileSpeed: 40
-  weapons: []
+  weapons:
+  - {fileID: 2046230590}
+  - {fileID: 633356310}
+  - {fileID: 526442934}
+  - {fileID: 1301700219}
+  - {fileID: 872701246}
 --- !u!4 &818359296
 Transform:
   m_ObjectHideFlags: 0
@@ -574,7 +688,7 @@ Transform:
   m_GameObject: {fileID: 818359293}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 27.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -595,29 +709,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundsType: 1
-  radius: 4
+  radius: 3
   keepOnScreen: 1
   screenLocs: 0
   camWidth: 0
   camHeight: 0
---- !u!114 &818359298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818359293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3135a402485bc4e8085f774336241e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  rollMult: -45
-  pitchMult: 30
-  projectilePrefab: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
-  projectileSpeed: 40
-  weapons: []
 --- !u!1001 &830387954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -626,6 +722,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1162540358}
     m_Modifications:
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: _type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.letter
+      value: L
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.projectilePrefab
+      value: 
+      objectReference: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.weaponModelPrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 2b917555367b8f64fab39ba6974870f3, type: 3}
     - target: {fileID: 5605231515421099664, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
       propertyPath: m_Name
       value: Weapon
@@ -675,6 +791,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+--- !u!114 &872701246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+  m_PrefabInstance: {fileID: 830387954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd0ea459540c4dd8a2fe0c1e60380b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &872701247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6787301483398206072, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
@@ -774,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7, y: 31.4, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -817,10 +944,10 @@ MonoBehaviour:
   weaponDefinitions:
   - type: 1
     letter: B
-    powerUpColor: {r: 1, g: 1, b: 1, a: 1}
+    powerUpColor: {r: 0.22745098, g: 0.44705883, b: 0.6901961, a: 1}
     weaponModelPrefab: {fileID: 919132149155446097, guid: 0522e2d6add5631469273543744ebf7f, type: 3}
     projectilePrefab: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
-    projectileColor: {r: 1, g: 1, b: 1, a: 1}
+    projectileColor: {r: 0.22745098, g: 0.44705883, b: 0.6901961, a: 1}
     damageOnHit: 1
     damagePerSec: 0
     delayBetweenShots: 0.2
@@ -845,7 +972,37 @@ MonoBehaviour:
     damagePerSec: 0
     delayBetweenShots: 0
     velocity: 0
-  powerUpFrequency: 01000000010000000200000006000000
+  - type: 3
+    letter: P
+    powerUpColor: {r: 1, g: 0, b: 0.922585, a: 1}
+    weaponModelPrefab: {fileID: 919132149155446097, guid: 2b917555367b8f64fab39ba6974870f3, type: 3}
+    projectilePrefab: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
+    projectileColor: {r: 1, g: 0, b: 0.971643, a: 1}
+    damageOnHit: 1
+    damagePerSec: 0
+    delayBetweenShots: 0.4
+    velocity: 50
+  - type: 4
+    letter: M
+    powerUpColor: {r: 1, g: 0.15438049, b: 0, a: 1}
+    weaponModelPrefab: {fileID: 919132149155446097, guid: 0b915be395eb1f54c87faeaabb622d10, type: 3}
+    projectilePrefab: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
+    projectileColor: {r: 1, g: 0, b: 0.09565163, a: 1}
+    damageOnHit: 1
+    damagePerSec: 0
+    delayBetweenShots: 0.4
+    velocity: 50
+  - type: 5
+    letter: L
+    powerUpColor: {r: 0.6490288, g: 0, b: 1, a: 1}
+    weaponModelPrefab: {fileID: 919132149155446097, guid: 8b6e5debbe11f9241ade9814e3d16d70, type: 3}
+    projectilePrefab: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
+    projectileColor: {r: 0.6509804, g: 0.003921569, b: 1, a: 1}
+    damageOnHit: 1
+    damagePerSec: 0
+    delayBetweenShots: 0.4
+    velocity: 50
+  powerUpFrequency: 010000000200000006000000030000000400000005000000
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,8 +1019,8 @@ MonoBehaviour:
   radius: 1
   keepOnScreen: 0
   screenLocs: 0
-  camWidth: 0
-  camHeight: 0
+  camWidth: 2
+  camHeight: 4
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,6 +1054,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6787301483398206072, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
   m_PrefabInstance: {fileID: 1642893922}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301700219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+  m_PrefabInstance: {fileID: 1642893922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd0ea459540c4dd8a2fe0c1e60380b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1548549971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -594825039726749188, guid: ae3a657191efe7040b52cc85f1d490eb, type: 3}
@@ -910,6 +1078,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 765813747}
     m_Modifications:
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: _type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.letter
+      value: S
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.powerUpColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.powerUpColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.powerUpColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.projectilePrefab
+      value: 
+      objectReference: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.weaponModelPrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 8b6e5debbe11f9241ade9814e3d16d70, type: 3}
     - target: {fileID: 5605231515421099664, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
       propertyPath: m_Name
       value: Weapon
@@ -967,6 +1167,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1548549971}
     m_Modifications:
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: _type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.letter
+      value: M
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.projectilePrefab
+      value: 
+      objectReference: {fileID: 3490808959410188338, guid: e4e9c7005f11f4ffc94f7018fb70d1da, type: 3}
+    - target: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+      propertyPath: def.weaponModelPrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 0b915be395eb1f54c87faeaabb622d10, type: 3}
     - target: {fileID: 5605231515421099664, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
       propertyPath: m_Name
       value: Weapon
@@ -1441,6 +1661,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae3a657191efe7040b52cc85f1d490eb, type: 3}
   m_PrefabInstance: {fileID: 2032418869}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2046230590 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1037579062123635890, guid: 60aed7ed7f47c44319b604b5f437ab3a, type: 3}
+  m_PrefabInstance: {fileID: 1718169441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd0ea459540c4dd8a2fe0c1e60380b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1451,3 +1682,4 @@ SceneRoots:
   - {fileID: 1971496230}
   - {fileID: 529887955}
   - {fileID: 139008872}
+  - {fileID: 92016657}

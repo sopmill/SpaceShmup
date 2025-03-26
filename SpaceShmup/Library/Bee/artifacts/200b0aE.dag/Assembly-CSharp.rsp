@@ -400,6 +400,7 @@
 "Assets/__Scripts/Enemy_4.cs"
 "Assets/__Scripts/Hero.cs"
 "Assets/__Scripts/Main.cs"
+"Assets/__Scripts/Menu.cs"
 "Assets/__Scripts/Parallax.cs"
 "Assets/__Scripts/PowerUp.cs"
 "Assets/__Scripts/ProjectileHero.cs"

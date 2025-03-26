@@ -109,7 +109,27 @@ public class Weapon : MonoBehaviour
                 p = MakeProjectile();
                 p.transform.rotation = Quaternion.AngleAxis(-10, Vector3.back);       
                 p.vel = p.transform.rotation * vel;
-                break;         
+                break;      
+                
+            case eWeaponType.phaser:
+                for (int i = 0; i < 3; i++)  
+                {
+                    p = MakeProjectile();
+                    p.vel = vel * (1 + (i * 0.1f)); 
+                }
+                break;
+
+            case eWeaponType.missle:
+                p = MakeProjectile();
+                p.vel = vel * 0.6f; 
+                p.transform.localScale *= 1.5f; 
+                break;
+
+            case eWeaponType.laser:
+                p = MakeProjectile();
+                p.vel = vel * 2f; 
+                p.transform.localScale *= 2f; 
+                break;   
         }
     }
     // Update is called once per frame

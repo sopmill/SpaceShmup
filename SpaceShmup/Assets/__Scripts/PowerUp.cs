@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent( typeof(BoundsCheck) )]
 public class PowerUp : MonoBehaviour {
@@ -15,7 +16,7 @@ public class PowerUp : MonoBehaviour {
     [Header("Dynamic")]
     public eWeaponType _type; 
     public GameObject cube; 
-    public TextMesh letter;
+    public TextMeshPro letter;
     public Vector3 rotPerSecond; 
     public float birthTime; 
     private Rigidbody rigid;
@@ -24,7 +25,7 @@ public class PowerUp : MonoBehaviour {
 
     void Awake() {
         cube = transform.GetChild(0).gameObject;
-        letter = GetComponent<TextMesh>();
+        letter = GetComponent<TextMeshPro>();
         rigid = GetComponent<Rigidbody>();
         bndCheck = GetComponent<BoundsCheck>();
         cubeMat = cube.GetComponent<Renderer>().material;
